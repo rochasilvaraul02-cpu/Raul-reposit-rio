@@ -1,56 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-   <head>
+
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinco Cidades</title>
+    <link rel="stylesheet" href="cinco-cidades.css">
 </head>
 
 <body>
 
-    <h1>Índice - Cinco Cidades</h1>
+    <!-- Navbar superior -->
+    <nav class="navbar">
+        <h1>Cinco Cidades</h1>
 
-    <ol>
-        <li><a href="#sao-paulo">São Paulo</a></li>
-        <li><a href="#rio-de-janeiro">Rio de Janeiro</a></li>
-        <li><a href="#brasilia">Brasília</a></li>
-        <li><a href="#salvador">Salvador</a></li>
-        <li><a href="#recife">Recife</a></li>
-    </ol>
+        <div class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#sao-paulo">São Paulo</a>
+            <a href="#rio-de-janeiro">Rio de Janeiro</a>
+            <a href="#brasilia">Brasília</a>
+            <a href="#salvador">Salvador</a>
+            <a href="#recife">Recife</a>
+        </div>
+    </nav>
 
+    <!-- Conteúdo principal -->
+    <main class="container">
 
-    <h2 id="sao-paulo">São Paulo</h2>
+        <!-- Índice lateral -->
+        <aside class="sidebar">
 
-    <a href="https://pt.wikivoyage.org/wiki/S%C3%A3o_Paulo" target="_blank">
-        <img src="saopaulo.jpg" alt="São Paulo" width="500">
-    </a>
+            <h2>Índice</h2>
 
+            <ol>
+                <li>
+                    <a href="https://pt.wikivoyage.org/wiki/S%C3%A3o_Paulo"
+                       target="visor">
+                       <img src="sao-paulo.jpg" alt="São Paulo" width="200" height="125">
+                        <h4>São Paulo</h4>
+                    </a>
+                </li>
 
-    <h2 id="rio-de-janeiro">Rio de Janeiro</h2>
+                <li>
+                    <a href="https://pt.wikivoyage.org/wiki/Rio_de_Janeiro"
+                       target="visor">
+                       <img src="rio-de-janeiro.jpg" alt="Rio de Janeiro" width="200" height="125">
+                        <h4>Rio de Janeiro</h4>
+                    </a>
+                </li>
 
-    <a href="https://pt.wikivoyage.org/wiki/Rio_de_Janeiro" target="_blank">
-        <img src="riodejaneiro.jpg" alt="Rio de Janeiro" width="500">
-    </a>
+                <li>
+                    <a href="https://pt.wikivoyage.org/wiki/Bras%C3%ADlia"
+                       target="visor">
+                       <img src="brasilia.jpg" alt="Brasilia" width="200" height="125">
+                        <h4>Brasilia</h4>
+                    </a>
+                </li>
 
+                <li>
+                    <a href="https://pt.wikivoyage.org/wiki/Salvador"
+                       target="visor">
+                       <img src="salvador.jpg" alt="Salvador" width="200" height="125">
+                        <h4>Salvador</h4>
+                    </a>
+                </li>
 
-    <h2 id="brasilia">Brasília</h2>
+                <li>
+                    <a href="https://pt.wikivoyage.org/wiki/Recife"
+                       target="visor">
+                       <img src="recife.jpg" alt="Recife" width="200" height="125">
+                        <h4>Recife</h4>
+                    </a>
+                </li>
+            </ol>
 
-    <a href="https://pt.wikivoyage.org/wiki/Bras%C3%ADlia" target="_blank">
-        <img src="brasilia.jpg" alt="Brasília" width="500">
-    </a>
+        </aside>
 
+        <!-- Área direita -->
+        <section class="content" id="inicio">
 
-    <h2 id="salvador">Salvador</h2>
+            <h2>Escolha uma cidade</h2>
 
-    <a href="https://pt.wikivoyage.org/wiki/Salvador" target="_blank">
-        <img src="salvador.jpg" alt="Salvador" width="500">
-    </a>
+            <p>
+                Clique em uma cidade no índice ao lado para visualizar
+                informações sobre ela.
+            </p>
 
+            <iframe
+                name="visor"
+                class="visor"
+                title="Informações sobre a cidade">
+            </iframe>
 
-    <h2 id="recife">Recife</h2>
+        </section>
 
-    <a href="https://pt.wikivoyage.org/wiki/Recife" target="_blank">
-        <img src="recife.jpg" alt="Recife" width="500">
-    </a>
+    </main>
 
 </body>
 
